@@ -46,7 +46,7 @@ class BooksApp extends React.Component {
             shiftShelf={this.moveBetShelves}  />} />
 
           <Route path="/search" render={(props)=>
-          <Search shiftShelf={this.moveBetShelves}/>}/>
+          <Search shiftShelf={this.moveBetShelves} books={this.state.books}/>}/>
         </Switch>
       </div>
     )
